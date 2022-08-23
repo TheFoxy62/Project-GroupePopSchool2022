@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Affichage et Édition d’article</title>
+</head>
+
+<body>
+    <header>
+        <figure class="fig1">
+            <img src="../Images/LogoBlog.png" alt="logo">
+        </figure>
+    </header>
+
+    <h1 class="center1">Voir / Éditer l'article</h1>
+
+
+        <section>
+            <div id="page">
+            <div class="link2">
+                <ul id="menu-vertical" class="menu">
+                    <li id="menu-item">
+                        <a class="title" title="Accueil" href="./index.html">Accueil</a>
+                        <ul>
+                            <li><a class="art" title="Articles" href="../pageadmin/tableau.html">Articles </a></li>
+    
+                            <li><a class="cat" title="Catégories" href="../pageadmin/editer.html">Catégories</a></li>
+    
+                            <li><a class="ta" title="Tags" href="../pageadmin/creationtagcatau.html">Tags</a></li>
+    
+                            <li><a class="au" title="Auteur" href="../pageadmin/editertagcatau.html">Auteur</a></li>
+                        </ul>
+                    </div>
+                    <section>
+                        <div class="pageAddArticle">
+                            <div class="zoneArticle">
+                                <div>
+                                    <div>
+                                        <label for="title">Titre de l'article</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="title" id="title">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="body">Corp de l'article</label>
+                                    </div>
+                                    <div>
+                                        <textarea name="body" id="body" cols="100" rows="40"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zoneOptions">
+                                <div id="categoriesList">
+                                    <label for="category">Sélectionnez la catégorie</label>
+                                    <select name="category" id="category"></select>
+                                </div>
+                                <div id="tagsList">
+                                    <div>
+                                        <label for="tags">sélectionnez un ou plusieur tags</label>
+                                    </div>
+                                    <div id="tagsCheckboxList"></div>
+                                </div>
+                                <div>
+                                    <label for="writer">Sélectionnez un auteur</label>
+                                    <select name="writer" id="writer"></select>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="publishedAt">Date de publication</label>
+                                    </div>
+                                    <div>
+                                        <input type="datetime-local" name="publishedAt" id="publishedAt">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button id="update">Modifier</button>
+                                    <a href="http://127.0.0.1:5500/page/articles.html"><button>Return à la liste d'articles &RightArrow;</button></a>
+                                </div>
+                                <div id="info"></div>
+                            </div>
+                    </section>
+            </div>
+        </section>
+    
+
+    <footer>
+        <hr>
+        <h3>License PopSchool 2022</h3>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="/js/admin-articles.js" defer></script>
+
+    <title>Tableau Articles</title>
+</head>
+
+<body>
+    <header>
+        <figure class="fig1">
+            <img src="../Images/LogoBlog.png" alt="logo">
+        </figure>
+    </header>
+
+    <h1 class="center1">tableau</h1>
+    <section>
+        <div id="page">
+        <div class="link2">
+            <ul id="menu-vertical" class="menu">
+                <li id="menu-item">
+                    <a class="title" title="Accueil" href="./index.html">Accueil</a>
+                    <ul>
+                        <li><a class="art" title="Articles" href="../pageadmin/tableau.html">Articles </a></li>
+
+                        <li><a class="cat" title="Catégories" href="../pageadmin/editer.html">Catégories</a></li>
+
+                        <li><a class="ta" title="Tags" href="../pageadmin/creationtagcatau.html">Tags</a></li>
+
+                        <li><a class="au" title="Auteur" href="../pageadmin/editertagcatau.html">Auteur</a></li>
+                    </ul>
+                </div>
+                <section class="tableau">
+                    <div id="info"></div>
+                    <div id="articles">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Titre</td>
+                                    <td>Date de publication</td>
+                                    <td>Actions</td>
+                                </tr>
+                            <tbody id="articlesDatas"></tbody>
+                        </table>
+                    </div>
+                    <div id="divCreateBtn">
+                        <a href="http://127.0.0.1:5500/page/create-article.html"><button id="createBtn">+ Créer</button></a>
+                    </div>
+                </section>
+        </div>
+    </section>
+
+
+    <footer>
+        <hr>
+        <h3>License PopSchool 2022</h3>
+    </footer>
+
+</body>
+
+</html>
